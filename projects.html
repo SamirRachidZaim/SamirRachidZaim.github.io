@@ -213,7 +213,7 @@ $(document).ready(function () {
 
 
 <p><br> <br></p>
-<div id="welcome-to-the-leek-group-in-the-data-science-lab-and-the-department-of-biostatistics-at-the-johns-hopkins-bloomberg-school-of-health.-we-are-a-group-of-researchers-educators-and-data-using-data-to-solve-problems-in-molecular-biology-human-health-meta-research-education-and-anything-else-we-think-could-be-useful-for-the-world.-we-produce-data-tools-and-code-that-you-can-use-for-your-projects-as-well.-we-teach-online-open-classes-so-you-can-learn-how-to-use-data-too.-if-you-think-any-of-this-sounds-cool-consider-joining-us-in-working-to-make-the-world-a-better-place.-if-you-just-want-to-keep-up-with-everything-we-are-working-on-follow-jeff-on-twitter-httpstwitter.comjtleek." class="section level3">
+
   <h2>Polygenic-N-of-1 Biomarker (Emerging Pathways Signal)</h2>
    <a href="http://lussierlab.net/publications/Emergence%20of%20pathway-level%20composite%20biomarkers.pdf"> Polygenic Biomarker Paper</a> 
   <h5> Abstract:
@@ -239,6 +239,28 @@ levels of baseline risks that are simultaneously confounded by
     patient-specific “genome-byenvironment” interactions (G×E). Area under the precision-recall curve of the SS approach far surpassed that of the CB (1st quartile, median, 3rd quartile: SS = 0.94, 0.96, 0.99; CB= 0.50, 0.52,0.65). We conclude that single-subject pathway detection methods are uniquely suited for
 consistently detecting pathway dysregulation by the inclusion of a
     patient’s individual variability. </h5>
+
+    <h2>Evaluating single-subject study methods for personal transcriptomic interpretations to advance precision medicine
+
+</h2>
+   <a href="http://www.lussiergroup.org/publications/EnsembleBiomarkerf"> Ensemble Biomarker Link</a> 
+
+   <h5>Abstract
+
+Background: Gene expression profiling has benefited medicine by providing clinically relevant insights at the molecular candidate and systems levels. However, to adopt a more ‘precision’ approach that integrates individual variability including ‘omics data into risk assessments, diagnoses, and therapeutic decision making, whole transcriptome expression analysis requires methodological advancements. One need is for users to confidently be able to make individual-level inferences from whole transcriptome data. We propose that biological replicates in isogenic conditions can provide a framework for testing differentially expressed genes (DEGs) in a single subject (ss) in absence of an appropriate external reference standard or replicates.
+
+Methods: Eight ss methods for identifying genes with differential expression (NOISeq, DEGseq, edgeR, mixture model, DESeq, DESeq2, iDEG, and ensemble) were compared in Yeast (parental line versus snf2 deletion mutant; n=42/condition) and MCF7 breast-cancer cell (baseline and stimulated with estradiol; n=7/condition) RNA-Seq datasets where replicate analysis was used to build reference standards from NOISeq, DEGseq, edgeR, DESeq, DESeq2. Each dataset was randomly partitioned so that approximately two-thirds of the paired samples were used to construct reference standards and the remainder were treated separately as single-subject sample pairs and DEGs were assayed using ss methods. Receiver-operator characteristic (ROC) and precision-recall plots were determined for all ss methods against each RSs in both datasets (525 combinations).
+
+Results: Consistent with prior analyses of these data, ~50% and ~15% DEGs were respectively obtained in Yeast and MCF7 reference standard datasets regardless of the analytical method. NOISeq, edgeR and DESeq were the most concordant and robust methods for creating a reference standard. Single-subject versions of NOISeq, DEGseq, and an ensemble learner achieved the best median ROC-area-under-the-curve to compare two transcriptomes without replicates regardless of the type of reference standard (>90% in Yeast, >0.75 in MCF7).
+
+Conclusion: Better and more consistent accuracies are obtained by an ensemble method applied to single-subject studies across different conditions. In addition, distinct specific sing-subject methods perform better according to different proportions of DEGs. Single-subject methods for identifying DEGs from paired samples need improvement, as no method performs with both precision>90% and recall>90%.
+
+http://www.lussiergroup.org/publications/EnsembleBiomarker
+ 
+
+Keywords: Single-subject studies, precision medicine, genomic
+   medicine, medical genomics, n-of-1, transcriptome, N-of-1 studies
+   </h5>
 
 
   <h2> N-of-1 R Package Development </h2>
