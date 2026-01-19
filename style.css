@@ -82,3 +82,23 @@ footer {
   background: #eaeaea;
   font-size: 0.9rem;
 }
+
+.research-links {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.5rem;
+}
+
+.research-links li {
+  margin-bottom: 0.4rem;
+}
+
+.research-links a {
+  color: inherit;              /* matches your site text color */
+  text-decoration: underline;
+  text-decoration-color: #aaa; /* subtle underline */
+}
+
+.research-links a:hover {
+  text-decoration-color: #000;
+}
