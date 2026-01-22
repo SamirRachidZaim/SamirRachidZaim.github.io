@@ -172,3 +172,113 @@ section li {
 .pdf-link:hover {
   background-color: #1a4d6e;
 }
+
+.scholar-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background-color: #4285f4;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.scholar-link:hover {
+  background-color: #3367d6;
+}
+
+.citation-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.metric {
+  text-align: center;
+}
+
+.metric h3 {
+  color: #0f3c5f;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.metric-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0f3c5f;
+}
+
+.citations-info {
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.citations-info em {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.scholar-links {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background-color: #e8f4fd;
+  border-radius: 4px;
+}
+
+.scholar-links a {
+  color: #0f3c5f;
+  font-weight: 500;
+}
+
+.publications-list {
+  margin-top: 2rem;
+}
+
+.year-section {
+  margin-bottom: 2rem;
+}
+
+.year-section h4 {
+  color: #0f3c5f;
+  border-bottom: 2px solid #0f3c5f;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.publication-item {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border-left: 4px solid #0f3c5f;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.publication-item strong {
+  color: #0f3c5f;
+  font-size: 1.1rem;
+}
+
+.publication-item p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.publication-item a {
+  color: #4285f4;
+  text-decoration: none;
+}
+
+.publication-item a:hover {
+  text-decoration: underline;
+}

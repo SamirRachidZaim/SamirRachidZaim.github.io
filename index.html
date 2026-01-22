@@ -16,6 +16,7 @@
 <nav class="tab-nav">
   <button class="tab-button active" onclick="openTab('about', this)">About Me</button>
   <button class="tab-button" onclick="openTab('skills', this)">Technical Skills</button>
+  <button class="tab-button" onclick="openTab('publications', this)">Publications</button>
   <button class="tab-button" onclick="openTab('projects', this)">Selected Projects</button>
   <button class="tab-button" onclick="openTab('education', this)">Education</button>
   <button class="tab-button" onclick="openTab('cv', this)">CV</button>
@@ -33,6 +34,9 @@
       My main mission is to contribute to AI- and data-powered scientific drug discovery, technology development, 
       and improved diagnostics and care. 
 
+      <a href="https://scholar.google.com/citations?user=_cxg7m4AAAAJ&hl=en&oi=ao" target="_blank" class="scholar-link">
+        View my Google Scholar profile with citation metrics and graphs →
+      </a>
     </p>
   </section>
 </div>
@@ -49,6 +53,78 @@
       <li>SQL & Data Management</li>
       <li>Reproducible Research (R Markdown, Git)</li>
     </ul>
+  </section>
+</div>
+
+<div id="publications" class="tab-content">
+  <section class="container">
+    <h2>Publications</h2>
+    
+    <div class="citation-metrics">
+      <div class="metric">
+        <h3>Total Citations</h3>
+        <div class="metric-value">[TOTAL_CITATIONS]</div>
+      </div>
+      <div class="metric">
+        <h3>H-index</h3>
+        <div class="metric-value">[H_INDEX]</div>
+      </div>
+      <div class="metric">
+        <h3>i10-index</h3>
+        <div class="metric-value">[I10_INDEX]</div>
+      </div>
+    </div>
+    
+    <div class="citations-info">
+      <p><em>h-index is the largest number h such that h publications have at least h citations.</em></p>
+      <p><em>i10-index is the number of publications with at least 10 citations.</em></p>
+      <p><em>Data from Google Scholar. Last updated: [UPDATE_DATE]</em></p>
+    </div>
+    
+    <div class="scholar-links">
+      <p>Please find a full publication list on <a href="https://scholar.google.com/citations?user=_cxg7m4AAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a></p>
+    </div>
+    
+    <div class="publications-list">
+      <!-- Publications will be listed here by year -->
+      <h3>Selected Publications</h3>
+      
+      <div class="year-section">
+        <h4>2024</h4>
+        <div class="publication-item">
+          <p><strong>[Publication Title]</strong><br>
+          [Journal Name]. [Year] [Authors]<br>
+          <a href="[DOI_URL]" target="_blank">[DOI Link]</a></p>
+        </div>
+      </div>
+      
+      <div class="year-section">
+        <h4>2023</h4>
+        <div class="publication-item">
+          <p><strong>Biomarkers to predict rheumatoid arthritis (collab with Dept. of Defense)</strong><br>
+          Arthritis & Rheumatology. 2023 [Authors]<br>
+          <a href="https://acrjournals.onlinelibrary.wiley.com/doi/abs/10.1002/art.43175" target="_blank">https://acrjournals.onlinelibrary.wiley.com/doi/abs/10.1002/art.43175</a></p>
+        </div>
+      </div>
+      
+      <div class="year-section">
+        <h4>2020</h4>
+        <div class="publication-item">
+          <p><strong>BinomialRF: Developing Machine Learning Modules to detect feature interactions</strong><br>
+          BMC Bioinformatics. 2020 [Authors]<br>
+          <a href="https://link.springer.com/article/10.1186/s12859-020-03718-9" target="_blank">https://link.springer.com/article/10.1186/s12859-020-03718-9</a></p>
+        </div>
+      </div>
+      
+      <div class="year-section">
+        <h4>2025</h4>
+        <div class="publication-item">
+          <p><strong>Epidemiological Long COVID Survey Study in WA Latino Communities</strong><br>
+          Journal of General Internal Medicine. 2025 [Authors]<br>
+          <a href="https://link.springer.com/article/10.1007/s11606-025-09732-y" target="_blank">https://link.springer.com/article/10.1007/s11606-025-09732-y</a></p>
+        </div>
+      </div>
+    </div>
   </section>
 </div>
 
