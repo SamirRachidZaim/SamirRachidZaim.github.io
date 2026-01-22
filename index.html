@@ -14,11 +14,11 @@
 </header>
 
 <nav class="tab-nav">
-  <button class="tab-button active" onclick="openTab('about')">About Me</button>
-  <button class="tab-button" onclick="openTab('skills')">Technical Skills</button>
-  <button class="tab-button" onclick="openTab('projects')">Selected Projects</button>
-  <button class="tab-button" onclick="openTab('education')">Education</button>
-  <button class="tab-button" onclick="openTab('contact')">Contact</button>
+  <button class="tab-button active" onclick="openTab('about', this)">About Me</button>
+  <button class="tab-button" onclick="openTab('skills', this)">Technical Skills</button>
+  <button class="tab-button" onclick="openTab('projects', this)">Selected Projects</button>
+  <button class="tab-button" onclick="openTab('education', this)">Education</button>
+  <button class="tab-button" onclick="openTab('contact', this)">Contact</button>
 </nav>
 
 <div id="about" class="tab-content active">
@@ -161,7 +161,7 @@
 </footer>
 
 <script>
-function openTab(tabName) {
+function openTab(tabName, button) {
   // Hide all tab contents
   var tabContents = document.getElementsByClassName('tab-content');
   for (var i = 0; i < tabContents.length; i++) {
@@ -178,7 +178,7 @@ function openTab(tabName) {
   document.getElementById(tabName).classList.add('active');
   
   // Add active class to the clicked button
-  event.target.classList.add('active');
+  button.classList.add('active');
 }
 </script>
 
