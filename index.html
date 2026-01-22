@@ -13,41 +13,54 @@
   <p>Biostatistician | Data Scientist | Machine Learning Scientist</p>
 </header>
 
-<section class="container">
-  <h2>About Me</h2>
-  <p>
-    I am a biostatistician and technical leader with 10+ years of experience
-    with > 10 completed projects & publications, and individual contributor with management experience. 
-    Excellent team player with a proven track record of delivering projects in high-pace biotech research environments.
-    My main mission is to contribute to AI- and data-powered scientific drug discovery, technology development, 
-    and improved diagnostics and care. 
+<nav class="tab-nav">
+  <button class="tab-button active" onclick="openTab('about')">About Me</button>
+  <button class="tab-button" onclick="openTab('skills')">Technical Skills</button>
+  <button class="tab-button" onclick="openTab('projects')">Selected Projects</button>
+  <button class="tab-button" onclick="openTab('education')">Education</button>
+  <button class="tab-button" onclick="openTab('contact')">Contact</button>
+</nav>
 
-  </p>
-</section>
-
-<section class="container">
-  <h2>Technical Skills</h2>
-  <ul class="skills">
-    <li>R (tidyverse, survival, ggplot2)</li>
-    <li>Python (pandas, numpy, scipy, scikit-learn)</li>
-    <li>Statistical Modeling & Inference</li>
-    <li>Survival Analysis</li>
-    <li>Clinical Trials & Longitudinal Data</li>
-    <li>SQL & Data Management</li>
-    <li>Reproducible Research (R Markdown, Git)</li>
-  </ul>
-</section>
-
-<section class="container">
-  <h2>Selected Projects</h2>
-
-  <div class="project">
-    <h3> Biomarkers to predict rheumatoid arthritis (collab with Dept. of Defense)</h3>
+<div id="about" class="tab-content active">
+  <section class="container">
+    <h2>About Me</h2>
     <p>
-      I lead a biomarker serum proteomics study in collaboration with the Department of Defense where we applied linear mixed effects and prediction modeling
-      to better understand disease pathogenesis and predict disease onset. The study resulted in a publication in <em>Arthritis & Rheumatology</em>,
-      a conference presentation at ACR 2023, and a patent application.
+      I am a biostatistician and technical leader with 10+ years of experience
+      with > 10 completed projects & publications, and individual contributor with management experience. 
+      Excellent team player with a proven track record of delivering projects in high-pace biotech research environments.
+      My main mission is to contribute to AI- and data-powered scientific drug discovery, technology development, 
+      and improved diagnostics and care. 
+
     </p>
+  </section>
+</div>
+
+<div id="skills" class="tab-content">
+  <section class="container">
+    <h2>Technical Skills</h2>
+    <ul class="skills">
+      <li>R (tidyverse, survival, ggplot2)</li>
+      <li>Python (pandas, numpy, scipy, scikit-learn)</li>
+      <li>Statistical Modeling & Inference</li>
+      <li>Survival Analysis</li>
+      <li>Clinical Trials & Longitudinal Data</li>
+      <li>SQL & Data Management</li>
+      <li>Reproducible Research (R Markdown, Git)</li>
+    </ul>
+  </section>
+</div>
+
+<div id="projects" class="tab-content">
+  <section class="container">
+    <h2>Selected Projects</h2>
+
+    <div class="project">
+      <h3> Biomarkers to predict rheumatoid arthritis (collab with Dept. of Defense)</h3>
+      <p>
+        I lead a biomarker serum proteomics study in collaboration with the Department of Defense where we applied linear mixed effects and prediction modeling
+        to better understand disease pathogenesis and predict disease onset. The study resulted in a publication in <em>Arthritis & Rheumatology</em>,
+        a conference presentation at ACR 2023, and a patent application.
+      </p>
 
 <ul class="research-links">
   <li>
@@ -62,18 +75,18 @@
   </li>
 </ul>
 
-    <span>Tools: R, mixed effect models, elastic net, ggplot2</span>
-  </div>
+      <span>Tools: R, mixed effect models, elastic net, ggplot2</span>
+    </div>
 
-  <div class="project">
-    <h3>BinomialRF: Developing Machine Learning Modules to detect feature interactions</h3>
-    <p>
-      I developed a novel machine learning algorithms to answer the basic question: if I know some features are important,
-      which combinations of these are important together, and can I quantify how important these combinations are? I led 
-      this research from start to finish, including the statistical derivation, simulation studies, manuscript writing, and
-      developed the accompanying machine learning software package in both R & python. 
-      
-    </p>
+    <div class="project">
+      <h3>BinomialRF: Developing Machine Learning Modules to detect feature interactions</h3>
+      <p>
+        I developed a novel machine learning algorithms to answer the basic question: if I know some features are important,
+        which combinations of these are important together, and can I quantify how important these combinations are? I led 
+        this research from start to finish, including the statistical derivation, simulation studies, manuscript writing, and
+        developed the accompanying machine learning software package in both R & python. 
+        
+      </p>
 
 <ul class="research-links">
   <li>
@@ -84,21 +97,21 @@
 
 </ul>
 
-    <span>Tools: R, lme4, mice</span>
-  </div>
+      <span>Tools: R, lme4, mice</span>
+    </div>
 
-  <div class="project">
-    <h3>Epidemiological Long COVID Survey Study in WA Latino Communities </h3>
-    <p>
-      Co-led a survey study with the Latino Center for Health at the University of Washington to better 
-      understand the impact of Long COVID in Latino communities in Washington State. Responsibilities included designing the survey,
-      randomization, data analysis, and manuscript writing. We presented findings at the WA Public Health Agency, 
-      Northwest Migrant Health Conference, and the UW Latino Center for Health Symposium. Additionally, we 
-      spoke with the Latino News Network about the study and its findings, and published this in the Journal of General Internal Medicine.
+    <div class="project">
+      <h3>Epidemiological Long COVID Survey Study in WA Latino Communities </h3>
+      <p>
+        Co-led a survey study with the Latino Center for Health at the University of Washington to better 
+        understand the impact of Long COVID in Latino communities in Washington State. Responsibilities included designing the survey,
+        randomization, data analysis, and manuscript writing. We presented findings at the WA Public Health Agency, 
+        Northwest Migrant Health Conference, and the UW Latino Center for Health Symposium. Additionally, we 
+        spoke with the Latino News Network about the study and its findings, and published this in the Journal of General Internal Medicine.
 
-    </p>
+      </p>
 
-    <ul class="research-links">
+      <ul class="research-links">
   <li>
     <a href="https://link.springer.com/article/10.1007/s11606-025-09732-y" target="_blank" rel="noopener noreferrer">
       Paper (Journal of General Internal Medicine)
@@ -110,37 +123,64 @@
     </a>
   </li>
 
-    <span>Tools: R, Survey Stats </span>
-  </div>
-</section>
+      <span>Tools: R, Survey Stats </span>
+    </div>
+  </section>
+</div>
 
-<section class="container">
-  <h2>Education</h2>
+<div id="education" class="tab-content">
+  <section class="container">
+    <h2>Education</h2>
 
-  <div class="education-item">
-    <strong>PhD in Statistics</strong><br />
-    University of Arizona
-  </div>
+    <div class="education-item">
+      <strong>PhD in Statistics</strong><br />
+      University of Arizona
+    </div>
 
-  <div class="education-item">
-    <strong>BA in Mathematics/Statistics</strong><br />
-    Carleton College
-  </div>
-</section>
+    <div class="education-item">
+      <strong>BA in Mathematics/Statistics</strong><br />
+      Carleton College
+    </div>
+  </section>
+</div>
 
-<section class="container">
-  <h2>Contact</h2>
-  <p>
-    Email: <a href="mailto:samir.rachid.zaim@gmail.com">first-dot-last-dot-last@gmail.com</a><br />
-    GitHub: <a href="https://github.com/SamirRachidZaim" target="_blank">https://github.com/SamirRachidZaim</a><br />
-    Google Scholar: <a href="https://scholar.google.com/citations?user=_cxg7m4AAAAJ&hl=en&oi=ao" target="_blank">scholar.google.com/SamirRachidZaim</a><br />
-    LinkedIn: <a href="https://linkedin.com/in/srachidz" target="_blank">linkedin.com/SamirRachidZaim</a>
-  </p>
-</section>
+<div id="contact" class="tab-content">
+  <section class="container">
+    <h2>Contact</h2>
+    <p>
+      Email: <a href="mailto:samir.rachid.zaim@gmail.com">first-dot-last-dot-last@gmail.com</a><br />
+      GitHub: <a href="https://github.com/SamirRachidZaim" target="_blank">https://github.com/SamirRachidZaim</a><br />
+      Google Scholar: <a href="https://scholar.google.com/citations?user=_cxg7m4AAAAJ&hl=en&oi=ao" target="_blank">scholar.google.com/SamirRachidZaim</a><br />
+      LinkedIn: <a href="https://linkedin.com/in/srachidz" target="_blank">linkedin.com/SamirRachidZaim</a>
+    </p>
+  </section>
+</div>
 
 <footer>
   © 2026 Samir Rachid Zaim
 </footer>
+
+<script>
+function openTab(tabName) {
+  // Hide all tab contents
+  var tabContents = document.getElementsByClassName('tab-content');
+  for (var i = 0; i < tabContents.length; i++) {
+    tabContents[i].classList.remove('active');
+  }
+  
+  // Remove active class from all tab buttons
+  var tabButtons = document.getElementsByClassName('tab-button');
+  for (var i = 0; i < tabButtons.length; i++) {
+    tabButtons[i].classList.remove('active');
+  }
+  
+  // Show the selected tab content
+  document.getElementById(tabName).classList.add('active');
+  
+  // Add active class to the clicked button
+  event.target.classList.add('active');
+}
+</script>
 
 </body>
 </html>
